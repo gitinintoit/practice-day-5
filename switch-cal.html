@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Switch Calculator</title>
+    <script src="js/calculator.js"></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var op = window.prompt("Enter the operation for numbers 25 and 20 ");
+        let ans;
+        switch(op){
+            case '+':
+                ans=add(25,20);
+                break;
+            case '-':
+                ans=subtract(25,20);
+                break;
+            case '*':
+                ans=multiply(25,20);
+                break;
+            case '/':
+                ans=divide(25,20);
+                
+        }
+        document.getElementById("demo").innerHTML=ans;
+        
+    </script>
+    
+</body>
+</html>
